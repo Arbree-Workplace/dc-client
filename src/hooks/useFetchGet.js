@@ -11,7 +11,7 @@ async function useFetchGet(endpoint) {
 
     token ? config.headers.Authorization = token : null
 
-    const url = process.env.API_URL || 'http://localhost:5000/api/'
+    const url = 'https://dc-express-api.herokuapp.com/api/'
 
     const api = url + endpoint + '/'
 
