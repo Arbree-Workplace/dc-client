@@ -10,7 +10,7 @@ async function useFetchDelete(endpoint) {
         }
     }
 
-    const url = 'http://localhost:5000/api/'
+    const url = process.env.API_URL || 'http://localhost:5000/api/'
 
     const api = url + endpoint + '/'
 
